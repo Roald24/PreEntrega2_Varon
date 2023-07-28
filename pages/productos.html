@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Kuro Cannabis</title>
+</head>
+<body>
+    
+
+
+    <nav class="navbar">
+    
+        
+    
+        <div class="navbar_menu">
+          <a href="/index.html" class="navbar_links">Inicio</a>
+          <a href="#" class="navbar_links">Productos</a>
+        </div>
+    
+      </nav>
+
+
+
+
+
+    <header>
+        <h1>Aqui te mostramos nuestros productos diponibles al dia de hoy, tambien puedes ir a la tabla de precios</h1>
+        <h3>Recorda de tener al dia tu reprocann y de no perderte nuestros descuentos!!</h3>
+    </header>
+
+
+    
+    
+    <div class="info">
+            
+        <div>
+            <h3>Tangie</h3>
+            <p>Sabor y aroma a mandarina, frutal y citrico</p>
+            <p>Efecto de felicidad, creatividad y euforia</p>
+
+            <legend>Cantidad</legend>
+                <select name="Gramos">
+                    <option value="1 gramo">1 gramo</option>
+                    <option value="0">0 Gramos</option>
+                </select>
+
+        </div>
+            
+            <div>
+                <h3>AK-47</h3>
+                <p>Sabor terroso, fuerte, ligero gusto dulce y floral</p>
+                <p>con efecto cerebral, euforico e ideal para interactuar</p>
+                <legend>Cantidad</legend>
+                    <select name="Gramos">
+                        <option value="1 gramo">1 gramo</option>
+                        <option value="0">0 Gramos</option>
+                    </select>
+            </div>
+
+
+    </div>
+
+    <div>
+        <button onclick="precioTotal()" class="btn">Comprar</button>
+    </div>
+
+
+
+
+    <div>
+      <table id="tabla">
+          <thead>
+              <tr>
+                  <th scope="col">Tabla de Precios</th>
+                  <th  scope="col">Tangie</th>
+                  <th  scope="col">AK-47</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Menos de 5 gramos</th>
+                  <td>$400xGramo</td>
+                  <td>$400xGramo</td>
+                </tr>
+              </tbody>
+            </table>
+    </div>
+
+
+
+    <script src="productos.js"></script>
+</body>
+</html>

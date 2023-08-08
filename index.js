@@ -1,14 +1,19 @@
-alert("Presione registrarse para ingresar su nombre y su edad")
+function verificarEdad() {
+    var edad = prompt("Por favor, ingresa tu edad:");
 
+    if (edad !== null) {
+        edad = parseInt(edad);
 
-
-function datos(nombre, edad){
-    let nombreUsuario = prompt("Ingresa tu nombre")
-    let edadUsuario = prompt("Ingresa tu edad")
-
-    if(edadUsuario >= 18){
-        alert("Puedes consumir marihuana")
-    }else{
-        alert("No puedes consumir marihuana")
+        if (isNaN(edad) || edad <= 0 || edad > 120) {
+            alert("Por favor, ingresa una edad válida (mayor a 0 y menor o igual a 120).");
+        } else {
+            if (edad >= 18){
+                alert("Puedes continuar comprando cannabis medicinal.");
+            } else {
+                alert("Lo siento, no puedes consumir marihuana debido a que no eres mayor de edad.");
+            }
+        }
+    } else {
+        alert("Por favor, ingresa tu edad para continuar.");
     }
 }

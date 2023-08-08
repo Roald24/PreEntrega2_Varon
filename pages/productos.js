@@ -1,4 +1,4 @@
-// Definir el array de productos
+// Array de los productos
 const productos = [
     { nombre: 'OG Kush', precio: 800 },
     { nombre: 'Wedding Cake', precio: 850 },
@@ -7,11 +7,11 @@ const productos = [
     { nombre: 'Critical', precio: 700 }
 ];
 
-// Carrito de compras
+// Variables del carrito
 const carrito = [];
 let total = 0;
 
-// Función para agregar un producto al carrito
+// Aregar elementos al carrito
 function agregarAlCarrito(nombre, precio) {
     const producto = { nombre, precio };
     carrito.push(producto);
@@ -19,14 +19,14 @@ function agregarAlCarrito(nombre, precio) {
     actualizarCarrito();
 }
 
-// Función para vaciar el carrito
+// Vaciar el carrito
 function vaciarCarrito() {
     carrito.length = 0;
     total = 0;
     actualizarCarrito();
 }
 
-// Función para actualizar la visualización del carrito
+// Actualizar el carrito, agregar, eliminar y precio total
 function actualizarCarrito() {
     const carritoLista = document.getElementById('carrito-lista');
     const precioTotal = document.getElementById('precio-total');
@@ -41,7 +41,7 @@ function actualizarCarrito() {
     precioTotal.textContent = `Total: $${total}`;
 }
 
-// Función para cambiar la vista de los productos
+// Los filtros de los productos
 function cambiarVistaProductos() {
     const filtroSeleccion = document.getElementById('filtro-seleccion').value;
 
@@ -59,7 +59,7 @@ function cambiarVistaProductos() {
     }
 }
 
-// Función para mostrar los productos
+// Mostrar los productos con sus imagenes, precios y boton
 function mostrarProductos(productosArray) {
     const productosDiv = document.getElementById('productos');
     productosDiv.innerHTML = '';
@@ -86,5 +86,5 @@ function mostrarProductos(productosArray) {
     });
 }
 
-// Mostrar los productos inicialmente
+// Te muestra los productos
 mostrarProductos(productos);

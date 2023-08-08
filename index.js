@@ -1,4 +1,8 @@
 function verificarEdad() {
+
+    var nombre = prompt("Pro favor, ingrese su nombre:");
+
+
     var edad = prompt("Por favor, ingresa tu edad:");
 
     if (edad !== null) {
@@ -10,7 +14,7 @@ function verificarEdad() {
             if (edad >= 18){
                 alert("Puedes continuar comprando cannabis medicinal.");
             } else {
-                alert("Lo siento, no puedes consumir marihuana debido a que no eres mayor de edad.");
+                alert("Lo siento, no puedes consumir marihuana.");
             }
         }
     } else {

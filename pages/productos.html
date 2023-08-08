@@ -11,6 +11,7 @@
 <body>
 
 
+  
 
 
 	<nav class="navbar">
@@ -25,6 +26,15 @@
 	</nav>
 
 
+   <div id="filtro">
+      <label for="filtro-seleccion">Filtrar por:</label>
+      <select id="filtro-seleccion">
+          <option value="todos">Todos los productos</option>
+          <option value="filtroNombre">Nombre del producto</option>
+          <option value="filtroPrecio">Por precio (menor a mayor)</option>
+      </select>
+      <button onclick="cambiarVistaProductos()">Aplicar Filtro</button>
+    </div>
 
 
 
@@ -47,7 +57,7 @@
             <button onclick="agregarAlCarrito('Wedding Cake', 850)">Agregar al Carrito</button>
         </div>
         <div class="producto">
-            <img src="../assets/img/afgani.png" alt="Afgani">
+            <img src="../assets/img/afgani.jpg" alt="Afgani">
             <p>Afgani - $1000</p>
             <button onclick="agregarAlCarrito('Afgani', 1000)">Agregar al Carrito</button>
         </div>
@@ -62,13 +72,17 @@
             <button onclick="agregarAlCarrito('Critical', 700)">Agregar al Carrito</button>
         </div>
     </div>
-	<div id="carrito">
-    	<h2>Carrito de Compra</h2>
-    	<ul id="carrito-lista">
-    	</ul>
-    	<p id="precio-total">Total: $0</p>
-    	<button onclick="vaciarCarrito()">Vaciar Carrito</button>
-	</div>
+
+
+
+
+	  <div id="carrito">
+    	  <h2>Carrito de Compra</h2>
+    	  <ul id="carrito-lista">
+    	  </ul>
+    	  <p id="precio-total">Total: $0</p>
+    	  <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+	  </div>
 
 	</div>
 	<script src="productos.js"></script>
